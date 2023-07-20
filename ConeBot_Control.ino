@@ -56,8 +56,8 @@ void setup() {
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); //disable brownout detector
   
   lifty.setPeriodHertz(50);    // standard 50 hz servo
-  servoN1.attach(2, 1000, 2000); //dummy setup
-  servoN2.attach(16, 1000, 2000); //dummy setup
+  // servoN1.attach(2, 1000, 2000); //dummy setup
+  // servoN2.attach(16, 1000, 2000); //dummy setup
   lifty.attach(liftyPin, 540, 2300);
   lifty.write(0);
   
