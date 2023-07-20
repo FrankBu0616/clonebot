@@ -54,9 +54,9 @@ byte lift;
 int count;
 
 void setup() {
-  // psramInit();
-  // esp_spiram_init();
-  // WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); //disable brownout detector
+  psramInit();
+  esp_spiram_init();
+  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); //disable brownout detector
   
   lifty.setPeriodHertz(50);    // standard 50 hz servo
   // servoN1.attach(2, 1000, 2000); //dummy setup
